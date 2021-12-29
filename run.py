@@ -73,10 +73,21 @@ for letter in letters_word:
     else:
         print('_ ', end='')
 
-# Add else statement hangman graphics correlate with amount of mistakes made
+# hangman graphics correlate with amount of mistakes made
 print()
 if number_mistakes:
     print(hangman_graphics[number_mistakes - 1])
 print()
 print('-------------------------------------------')
+
+if len(letters_guessed) == len(letters_word):
+    print()
+    print('Congratulations!YOU WOOOON!!!')
+
+
+if number_mistakes == number_mistakes_allowed:
+    print()
+    print('OOOH NO!!..HANGED in the gallows!')   
+
+
 
