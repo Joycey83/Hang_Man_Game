@@ -72,3 +72,11 @@ for letter in letters_word:
         print(letter + ' ', end='')
     else:
         print('_ ', end='')
+
+# Add else statement hangman graphics correlate with amount of mistakes made
+print()
+if number_mistakes:
+    print(hangman_graphics[number_mistakes - 1])
+print()
+print('-------------------------------------------')
+
