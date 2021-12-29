@@ -80,12 +80,12 @@ while NUMBER_MISTAKES < NUMBER_MISTAKES_ALLOWED:
         print(hangman_graphics[NUMBER_MISTAKES - 1])
     print()
     print('-------------------------------------------')
-
+# Word guessed correctly so player wins
     if len(letters_guessed) == len(letters_word):
         print()
         print('Congratulations!YOU WOOOON!!!')
         break
-
+# Word guessed incorrectly so player lose
 if NUMBER_MISTAKES == NUMBER_MISTAKES_ALLOWED:
     print()
     print('OOOH NO!!..HANGED in the gallows!')   
