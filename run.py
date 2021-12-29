@@ -16,6 +16,7 @@ words = ['act', 'air', 'age', 'bag', 'cap', 'map',
          'good', 'boards', 'chair', 'count', 'facts',
          'green', 'house']
 
+# Hangman images that will show 9 stages when player gets a letter wrong
 hangman_graphics = ['_',
                     '__',
                     '__\n |',
@@ -26,3 +27,13 @@ hangman_graphics = ['_',
                     '__\n |\n O\n/|\ \n/',
                     '__\n |\n O\n/|\ \n/ \ '                
                     ]
+
+# Basic functions of the Hangman game
+
+number_mistakes = 0
+letters_guessed = []
+number_mistakes_allowed = len(hangman_graphics)
+word = random.choice(words)
+letters_word = list(word)
+wrong_letters = []
+
