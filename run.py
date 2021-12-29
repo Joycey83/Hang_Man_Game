@@ -1,5 +1,7 @@
-# Code for Hangman Game referenced from a Youtuber called MJ Codes
-# Imports from the bulit-in Python functions
+"""
+Code for Hangman Game referenced from a Youtuber called MJ Codes
+Imports from the bulit-in Python functions
+"""
 import random
 import time
 
