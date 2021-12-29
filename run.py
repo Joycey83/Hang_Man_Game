@@ -37,9 +37,11 @@ word = random.choice(words)
 letters_word = list(word)
 wrong_letters = []
 
+# Tells you how many letters for that word
 print()
 print('The word has {} letters'.format(len(letters_word)))
 
+# Add while loop letting player know the wrong letter and how many guesses left
 while number_mistakes < number_mistakes_allowed:
     print()
     print('Wrong letters: ', end='')
@@ -49,3 +51,24 @@ while number_mistakes < number_mistakes_allowed:
     print('Guesses left: {}'.format(number_mistakes_allowed - number_mistakes))
     letter_user = input('Enter a letter --> ')
 
+# checking if the letter has been guessed before
+
+while letter_user in letters_guessed or letter_user in wrong_letters:
+    print()
+    print('You have already USED this letter, enter another one please')
+    letter_user = input('Enter a letter --> ')
+
+print()
+print('Word: ', end='')
+
+# Add for loop that shows letters that the player has already used
+
+for letter in letters_word:
+    if letter_user == letter:
+        letters_guessed.append(letter_user)
+
+for letter in letters_word:
+    if letter in letters_guessed:
+        print(letter + ' ', end='')
+    else:
+        print('_ ', end='')
