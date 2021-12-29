@@ -49,7 +49,7 @@ while NUMBER_MISTAKES < NUMBER_MISTAKES_ALLOWED:
         print('{}, '.format(letter), end='')
     print()
     print('Guesses left: {}'.format(NUMBER_MISTAKES_ALLOWED - NUMBER_MISTAKES))
-    letter_user = input('Enter a letter --> ')  
+    letter_user = input('Enter a letter -->')  
 # checking if the letter has been guessed before
 
     while letter_user in letters_guessed or letter_user in wrong_letters:
