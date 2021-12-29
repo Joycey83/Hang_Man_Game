@@ -27,23 +27,24 @@ hangman_graphics = ['_',
                     '__\n |\n O\n/|\ \n/ \ '                
                     ]
 
-number_mistakes = 0
+NUMBER_MISTAKES = 0
 letters_guessed = []
-number_mistakes_allowed = len(hangman_graphics)
+NUMBER_MISTAKES_ALLOWED = len(hangman_graphics)
 word = random.choice(words)
 letters_word = list(word)
 wrong_letters = []
 
+# Amount of letters the word has
 print()
 print('The word has {} letters'.format(len(letters_word)))
 
-while number_mistakes < number_mistakes_allowed:
+while NUMBER_MISTAKES < NUMBER_MISTAKES_ALLOWED:
     print()
     print('Wrong letters: ', end='')
     for letter in wrong_letters:
         print('{}, '.format(letter), end='')
     print()
-    print('Guesses left: {}'.format(number_mistakes_allowed - number_mistakes))
+    print('Guesses left: {}'.format(NUMBER_MISTAKES_ALLOWED - NUMBER_MISTAKES))
     letter_user = input('Enter a letter --> ')
 
     while letter_user in letters_guessed or letter_user in wrong_letters:
@@ -52,7 +53,7 @@ while number_mistakes < number_mistakes_allowed:
         letter_user = input('Enter a letter --> ')
 
     if letter_user not in letters_word:
-        number_mistakes += 1
+        NUMBER_MISTAKES += 1
         wrong_letters.append(letter_user)
 
     print()
@@ -69,8 +70,8 @@ while number_mistakes < number_mistakes_allowed:
             print('_ ', end='')
 
     print()
-    if number_mistakes:
-        print(hangman_graphics[number_mistakes - 1])
+    if NUMBER_MISTAKES:
+        print(hangman_graphics[NUMBER_MISTAKES - 1])
     print()
     print('-------------------------------------------')
 
@@ -79,9 +80,7 @@ while number_mistakes < number_mistakes_allowed:
         print('Congratulations!YOU WOOOON!!!')
         break
 
-if number_mistakes == number_mistakes_allowed:
+if NUMBER_MISTAKES == NUMBER_MISTAKES_ALLOWED:
     print()
     print('OOOH NO!!..HANGED in the gallows!')   
-
-
 
