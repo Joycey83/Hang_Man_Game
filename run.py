@@ -16,4 +16,13 @@ words = ['act', 'air', 'age', 'bag', 'cap', 'map',
          'good', 'boards', 'chair', 'count', 'facts',
          'green', 'house']
 
-
+hangman_graphics = ['_',
+                    '__',
+                    '__\n |',
+                    '__\n |\n O',
+                    '__\n |\n O\n |',
+                    '__\n |\n O\n/|',
+                    '__\n |\n O\n/|\ ',
+                    '__\n |\n O\n/|\ \n/',
+                    '__\n |\n O\n/|\ \n/ \ '                
+                    ]
