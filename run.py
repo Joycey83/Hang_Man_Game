@@ -38,6 +38,10 @@ wrong_letters = []
 print()
 print('The word has {} letters'.format(len(letters_word)))
 
+# while loop which will run until the number of mistakes =
+# Number mistakes allowed
+# Each wrong letter will take away each guesses left
+
 while NUMBER_MISTAKES < NUMBER_MISTAKES_ALLOWED:
     print()
     print('Wrong letters: ', end='')
@@ -45,20 +49,21 @@ while NUMBER_MISTAKES < NUMBER_MISTAKES_ALLOWED:
         print('{}, '.format(letter), end='')
     print()
     print('Guesses left: {}'.format(NUMBER_MISTAKES_ALLOWED - NUMBER_MISTAKES))
-    letter_user = input('Enter a letter --> ')
+    letter_user = input('Enter a letter --> ')  
+# checking if the letter has been guessed before
 
     while letter_user in letters_guessed or letter_user in wrong_letters:
         print()
         print('You have already USED this letter, enter another one please')
         letter_user = input('Enter a letter --> ')
-
+# if the letter not in the word the wrong letter will be printed for the player
     if letter_user not in letters_word:
         NUMBER_MISTAKES += 1
         wrong_letters.append(letter_user)
 
     print()
     print('Word: ', end='')
-
+# If the letter is correct it will replace the blanks in the correct space
     for letter in letters_word:
         if letter_user == letter:
             letters_guessed.append(letter_user)
@@ -69,6 +74,7 @@ while NUMBER_MISTAKES < NUMBER_MISTAKES_ALLOWED:
         else:
             print('_ ', end='')
 
+# Hangman graphics correlate with amount of mistakes made
     print()
     if NUMBER_MISTAKES:
         print(hangman_graphics[NUMBER_MISTAKES - 1])
