@@ -8,7 +8,7 @@ import time
 # Users input their names before starting to play the game
 name = input("ENTER YOUR PLAYER NAME ->\n ")
 print("Welcome to Hangman " + name + "! Best of Luck...")
-print("You will only have 9 lives to get the word correct")
+print("You will only have 8 lives to get the word correct")
 time.sleep(2)
 print("Game begins now...\n")
 time.sleep(2)
@@ -22,7 +22,15 @@ words = ['act', 'category', 'trainer', 'bag', 'cap',
 ASCII hangman art code reference taken from MJ Linane which I found on Google
 which directed me to his github
 """
-hangman_graphics = hangman_graphics = ['''
+hangman_graphics = ['''
+
+  +---+
+      |
+      |
+      |
+      |
+      |
+=========''', '''
   +---+
   |   |
       |
