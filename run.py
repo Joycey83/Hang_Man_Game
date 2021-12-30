@@ -18,6 +18,7 @@ words = ['act', 'air', 'age', 'bag', 'cap',
          'exam', 'good', 'boards', 'chair', 
          'count', 'facts', 'green', 'house']
 
+# ASCII hangman art code referenced from Stack Overflow
 hangman_graphics = ['_',
                     '__',
                     '__\n |',
