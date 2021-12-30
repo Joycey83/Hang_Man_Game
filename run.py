@@ -6,7 +6,7 @@ import random
 import time
 
 # Users input their names before starting to play the game
-name = input("ENTER YOU NAME ->\n ")
+name = input("ENTER YOUR PLAYER NAME ->\n ")
 print("Welcome to Hangman " + name + "! Best of Luck...")
 print("You will only have 9 lives to get the word correct")
 time.sleep(2)
