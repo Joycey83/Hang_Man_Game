@@ -81,7 +81,7 @@ hangman_graphics = ['''
       |
 =========''']
 
-# Basic functions & variables for the game
+# Basic functions & Constant variables for the game
 NUMBER_MISTAKES = 0
 letters_guessed = []
 NUMBER_MISTAKES_ALLOWED = len(hangman_graphics)
