@@ -13,9 +13,9 @@ time.sleep(2)
 print("Game begins now...\n")
 time.sleep(2)
 
-words = ['act', 'air', 'age', 'bag', 'cap', 
+words = ['act', 'category', 'trainer', 'bag', 'cap', 
          'map', 'area', 'baby', 'card', 'dish', 
-         'exam', 'good', 'boards', 'chair', 
+         'exam', 'convulsion', 'boards', 'chair', 
          'count', 'facts', 'green', 'house']
 
 # ASCII hangman art code referenced from Stack Overflow
