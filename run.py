@@ -143,5 +143,5 @@ while NUMBER_MISTAKES < NUMBER_MISTAKES_ALLOWED:
 # Word guessed incorrectly so player lose
 if NUMBER_MISTAKES == NUMBER_MISTAKES_ALLOWED:
     print()
-    print('OOOH NO!!..HANGED in the gallows!')   
+    print('OOOH NO!!.. YOU ARE HANGED in the gallows!')   
 
