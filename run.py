@@ -1,5 +1,6 @@
 """
-Code for Hangman Game referenced from a Youtuber called MJ Codes
+Code for Hangman Game was inspired from a Youtuber called MJ Codes
+Partial snippets of the code was referenced from a post on Stack Overflow
 Imports from the bulit-in Python functions
 """
 import random
