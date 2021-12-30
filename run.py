@@ -1,6 +1,5 @@
 """
 Code for Hangman Game was inspired from a Youtuber called MJ Codes
-Partial snippets of the code was referenced from a post on Stack Overflow
 Imports from the bulit-in Python functions
 """
 import random
@@ -19,17 +18,60 @@ words = ['act', 'category', 'trainer', 'bag', 'cap',
          'exam', 'convulsion', 'boards', 'chair', 
          'count', 'facts', 'green', 'house']
 
-# ASCII hangman art code referenced from Stack Overflow
-hangman_graphics = ['_',
-                    '__',
-                    '__\n |',
-                    '__\n |\n O',
-                    '__\n |\n O\n |',
-                    '__\n |\n O\n/|',
-                    '__\n |\n O\n/|\ ',
-                    '__\n |\n O\n/|\ \n/',
-                    '__\n |\n O\n/|\ \n/ \ '                
-                    ]
+"""
+ASCII hangman art code reference taken from MJ Linane which I found on Google
+which directed me to his github
+"""
+hangman_graphics = hangman_graphics = ['''
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+      |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+  |   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ /    |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
+=========''']
 
 NUMBER_MISTAKES = 0
 letters_guessed = []
