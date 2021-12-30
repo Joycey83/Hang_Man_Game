@@ -140,6 +140,12 @@ while NUMBER_MISTAKES < NUMBER_MISTAKES_ALLOWED:
         print()
         print('Congratulations!YOU WOOOON!!!')
         break
+    playagain = input('Play again? (Y/N)\n ').upper()
+    if playagain == 'Y':
+        word = random.choice(words)
+        break
+    elif playagain == 'N':
+        break
 # Word guessed incorrectly so player lose
 if NUMBER_MISTAKES == NUMBER_MISTAKES_ALLOWED:
     print()
