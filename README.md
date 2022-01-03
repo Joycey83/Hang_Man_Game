@@ -6,4 +6,4 @@ For my portfolio 3 project I have chosen a fun school favourite, a well known ga
 
 ---
 
-![page mock up.](assets/images/final-mock-up.PNG)
+![page mock up.](assets/images/hangman-mock-up.JPG)
