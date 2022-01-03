@@ -20,3 +20,5 @@ The word to be guessed will be displayed as _ _ _ _ _ and with an image of a han
     - ### First Time User
     1. As a first time user, I want to easily navigate through the game with simple inputs.
     2. As a first time user, I want to be able to have fun, enjoy the game and feel nostalgic when playing.
+    - ### Returning User
+    1. As a Returning user, I want the navigation to be the same as it was the first time to keep it familiar.
