@@ -208,7 +208,7 @@ while NUMBER_MISTAKES < NUMBER_MISTAKES_ALLOWED:
 # Word guessed correctly so player wins
     if len(letters_guessed) == len(letters_word):
         print()
-        print('Congratulations!YOU WOOOON!!!')
+        print("Congratulations! " + name + "You have WOOON!!") 
         break
     playagain = input('Play again? (Y/N)\n ').upper()
     if playagain == 'Y':
