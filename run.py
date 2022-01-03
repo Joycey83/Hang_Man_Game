@@ -216,7 +216,7 @@ while NUMBER_MISTAKES < NUMBER_MISTAKES_ALLOWED:
         break
     elif playagain == 'N':
         break
-# Word guessed incorrectly so player lose
+# Word guessed incorrectly so player lose 
 if NUMBER_MISTAKES == NUMBER_MISTAKES_ALLOWED:
     print()
     print("OH NOO!! " + name + "! You are HANGED in the gallows!!")   
