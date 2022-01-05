@@ -25,3 +25,4 @@ The word to be guessed will be displayed as _ _ _ _ _ and with an image of a han
     - ### Frequent User
     1. As a Frequent User, I want to be able to notice different words still being guessed.
     2. As a Frequent User, I want the navigation to be the same throughout.
+    
