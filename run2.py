@@ -16,7 +16,6 @@ letters_word = list(word)
 wrong_letters = []
 
 
-
 def validate_input_no_empty(input):
     # Validate is not empty
     if not input:
@@ -72,5 +71,4 @@ def play_game(username, word, letters_word):
     
 
 if __name__ == "__main__":
-    start_game()
-   
+    start_game()   

@@ -32,3 +32,17 @@ The word to be guessed will be displayed as _ _ _ _ _ and with an image of a han
 ---   
 # Existing Features
 
+---
+# Technology Used
+
+---
+# Testing
+
+---
+# Deployment
+
+---
+# Credit & Acknowledgement
+
+
+
