@@ -1,3 +1,4 @@
+# Word list taken from Youtube channel Kite
 word_list = [
     'wares',
     'soup',
@@ -438,4 +439,5 @@ word_list = [
     'vent',
     'hybrid',
     'buffet',
-    'lively']
+    'lively'
+    ]
