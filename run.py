@@ -14,7 +14,7 @@ def validate_input_no_empty(input):
 
 """
 My Hangman game was partially referenced from a Youtube Tutorial
-taken from a Youtube channel called Kite, for link see readme file 
+taken from a Youtube channel called Kite, for link see readme file. 
 """
 
 
@@ -108,7 +108,7 @@ def play_game(word):
     if guessed:
         print("Congrats, you guessed the word! You win!")
     else:
-        print("OH NO!!, you are HANGED!. The word was " + word + ".Try again")
+        print("OH NO!!, you are HANGED! The word was " + word + ".Try again")
 
         
 if __name__ == "__main__":
