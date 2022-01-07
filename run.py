@@ -1,223 +1,110 @@
-"""
-Code for Hangman Game was inspired from a Youtuber called MJ Codes
-Imports from the bulit-in Python functions
-"""
 import random
+from words import word_list
+from hang_man_logo import HANGMAN_GAME_LOGO
 import time
+from hangman import display_hangman
 
-# Add ASCII Art using a ASCII Art genrator to create hang man game
-HANGMAN_GAME_LOGO = """
 
-██╗  ██╗ █████╗ ███╗   ██╗ ██████╗     ███╗   ███╗ █████╗ ███╗   ██╗    
-██║  ██║██╔══██╗████╗  ██║██╔════╝     ████╗ ████║██╔══██╗████╗  ██║    
-███████║███████║██╔██╗ ██║██║  ███╗    ██╔████╔██║███████║██╔██╗ ██║    
-██╔══██║██╔══██║██║╚██╗██║██║   ██║    ██║╚██╔╝██║██╔══██║██║╚██╗██║    
-██║  ██║██║  ██║██║ ╚████║╚██████╔╝    ██║ ╚═╝ ██║██║  ██║██║ ╚████║    
-╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝     ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝    
-                                                                        
+def validate_input_no_empty(input):
+    # Validate is not empty
+    if not input:
+        return False
+    return True
 
- ██████╗  █████╗ ███╗   ███╗███████╗
-██╔════╝ ██╔══██╗████╗ ████║██╔════╝
-██║  ███╗███████║██╔████╔██║█████╗  
-██║   ██║██╔══██║██║╚██╔╝██║██╔══╝  
-╚██████╔╝██║  ██║██║ ╚═╝ ██║███████╗
- ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝
 
-             .@==========================@                                   
-             .@                          @                                   
-             .@                          @                                   
-             .@                          @                                   
-             .@                          @                                   
-             .@                          @                                   
-             .@                          @                                   
-             .@                         =@:                                  
-             .@                       :%: -#.                                
-             .@                      :*    .#.                               
-             .@                      #.     :-                               
-             .@                      %      .+                               
-             .@                      *      .+                               
-             .@                      *:     :-                               
-             .@                       *    :#                                
-             .@                       .*==-+                                 
-             .@                          +                                   
-             .@                          +                                   
-             .@                     --.  + .+:                               
-             .@                      .*#.+-*.                                
-             .@                        .+%=                                  
-             .@                          +                                   
-             .@                          +                                   
-             .@                          +                                   
-             .@                          +                                   
-             .@                          +                                   
-             .@                         :@-                                  
-             .@                        .+.*-                                 
-             .@                       :*   +.                                
-             .@                      .*    .#                                
-             .@                     :+      -=                               
-             .@                                                              
-             .@                                                              
-             .@                                                              
-             .@                                                              
-             .@                                                              
-             .@                                                              
-             .@                                                              
-             .@                                                              
-             .@                                                              
-             .@                                                              
-             .@                                                              
-             .@                                                              
-             .@                                                              
-             .@                                                              
-             .@                                                              
-    =########%@#########                                                     
-    .:::::::::::::::::::  
-                                                                                                                                    
- """
-print(HANGMAN_GAME_LOGO)
-
-# Users input their names before starting to play the game
-name = input("ENTER YOUR PLAYER NAME ->\n ")
-print("Welcome to Hangman " + name + "! Best of Luck...")
-print("You will only have 8 lives to get the word correct")
-time.sleep(2)
-print("Game begins now...\n")
-time.sleep(2)
-
-words = ['act', 'category', 'trainer', 'bag', 'cap', 
-         'map', 'area', 'baby', 'card', 'dish', 
-         'exam', 'convulsion', 'boards', 'chair', 
-         'count', 'facts', 'green', 'house']
-
-"""
-ASCII hangman art code reference taken from MJ Linane which I found on Google
-which directed me to his github
-"""
-hangman_graphics = ['''
-
-  +---+
-      |
-      |
-      |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-=========''']
-
-# Basic functions & Constant variables for the game
-NUMBER_MISTAKES = 0
-letters_guessed = []
-NUMBER_MISTAKES_ALLOWED = len(hangman_graphics)
-word = random.choice(words)
-letters_word = list(word)
-wrong_letters = []
-
-# Amount of letters the word has
-print()
-print('The word has {} letters'.format(len(letters_word)))
-
-# while loop which will run until the number of mistakes =
-# Number mistakes allowed
-# Each wrong letter will take away each guesses left
-
-while NUMBER_MISTAKES < NUMBER_MISTAKES_ALLOWED:
-    print()
-    print('Wrong letters: ', end='')
-    for letter in wrong_letters:
-        print("{}, ".format(letter), end='')
-    print()
-    print("Guesses left: {}".format(NUMBER_MISTAKES_ALLOWED - NUMBER_MISTAKES))
-    letter_user = input('Enter a letter -->\n')  
-# checking if the letter has been guessed before
-
-    while letter_user in letters_guessed or letter_user in wrong_letters:
-        print()
-        print('You have already USED this letter, enter another one please')
-        letter_user = input('Enter a letter -->\n ')
-# if the letter not in the word the wrong letter will be printed for the player
-    if letter_user not in letters_word:
-        NUMBER_MISTAKES += 1
-        wrong_letters.append(letter_user)
-    
-    print()
-    print('Word: ', end='')
-# If the letter is correct it will replace the blanks in the correct space
-    for letter in letters_word:
-        if letter_user == letter:
-            letters_guessed.append(letter_user)
-
-    for letter in letters_word:
-        if letter in letters_guessed:
-            print(letter + ' ', end='')
+def main():
+    print(HANGMAN_GAME_LOGO)
+    input_is_invalid = True
+    while input_is_invalid is True:
+        name = input("ENTER YOUR PLAYER NAME ->\n ")
+        input_is_invalid = not validate_input_no_empty(name)
+        if input_is_invalid is False:
+            print("Welcome to Hangman " + name + "! Best of Luck...")
+            print("You will only have 7 lives to get the word correct")
+            time.sleep(2)
+            print("Game begins now...\n")
+            time.sleep(2)
         else:
-            print('_ ', end='')
+            print("NEED TO ENTER PLAYER NAME! \n")
+    word = get_word()
+    play_game(word)
+    while input("Play Again? (Y/N) ").upper() == "Y":
+        word = get_word()
+        play_game(word)
 
-# Hangman graphics correlate with amount of mistakes made
-    print()
-    if NUMBER_MISTAKES:
-        print(hangman_graphics[NUMBER_MISTAKES - 1])
-    print()
-    print('-------------------------------------------')
-# Word guessed correctly so player wins
-    if len(letters_guessed) == len(letters_word):
-        print()
-        print("Congratulations! " + name + "You have WOOON!!") 
-        break
-    playagain = input('Play again? (Y/N)\n ').upper()
-    if playagain == 'Y':
-        word = random.choice(words)
-        break
-    elif playagain == 'N':
-        break
-# Word guessed incorrectly so player lose 
-if NUMBER_MISTAKES == NUMBER_MISTAKES_ALLOWED:
-    print()
-    print("OH NOO!! " + name + "! You are HANGED in the gallows!!")   
 
+def get_word():
+    word = random.choice(word_list)
+    return word.upper()
+
+
+def print_secret_word(secret_word):
+    new_word = f' {len(secret_word)} letters: '
+    for letter in secret_word:
+        new_word += f'{letter} '
+    print(new_word)
+
+
+def print_guessed_letters(guessed_letters):
+    print(f'Guessed letters: {" ".join(guessed_letters)}')
+
+
+def replace_guessed_letter(secret_word, guess, word):
+    index = 0
+    secret_word_list = list(secret_word)
+    for letter in word:
+        if guess.upper() == letter.upper():
+            secret_word_list[index] = guess
+        index = index + 1
+    return "".join(secret_word_list)
+     
+     
+def play_game(word):
+    secret_word = "_" * len(word)
+    guessed = False
+    guessed_letters = []
+    guessed_words = []
+    lives = 7
+    print("Let's play Hangman!")
+    print(display_hangman(lives))
+    print_secret_word(secret_word)
+    print("\n")
+    while not guessed and lives > 0:
+        guess = input("Please guess a Letter or Word: ").upper()
+        if len(guess) == 1 and guess.isalpha():
+            if guess in guessed_letters:
+                print("You already guessed the letter", guess)
+            elif guess not in word:
+                print(guess, "is not in the word.")
+                lives -= 1
+                guessed_letters.append(guess)
+            else:
+                print("Good job,", guess, "is in the word!")
+                guessed_letters.append(guess)
+                secret_word = replace_guessed_letter(secret_word, guess, word)
+                
+        elif len(guess) == len(word) and guess.isalpha():
+            if guess in guessed_words:
+                print("You already guessed the word", guess)
+            elif guess != word:
+                print(guess, "is not the word.")
+                lives -= 1
+                guessed_words.append(guess)
+            else:
+                guessed = True
+                secret_word = word
+        else:
+            print("Not a valid Character.")
+        print(display_hangman(lives))
+        print_guessed_letters(guessed_letters)
+        print_secret_word(secret_word)
+        print("\n")
+    if guessed:
+        print("Congrats, you guessed the word! You win!")
+    else:
+        print("OH NO!!, you are HANGED!. The word was " + word + ".Try again")
+
+        
+if __name__ == "__main__":
+
+    main()
