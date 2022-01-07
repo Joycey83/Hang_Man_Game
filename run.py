@@ -12,6 +12,12 @@ def validate_input_no_empty(input):
     return True
 
 
+"""
+My Hangman game was partially referenced from a Youtube Tutorial
+taken from a Youtube channel called Kite, for link see readme file 
+"""
+
+
 def main():
     print(HANGMAN_GAME_LOGO)
     input_is_invalid = True
