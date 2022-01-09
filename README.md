@@ -140,6 +140,15 @@ The word to be guessed will be displayed as _ _ _ _ _ and with an image of a han
 *  PEP8 Python Validator - No errors were returned when passing through PEP8, only warning stating trailing white spaces for Hangman-display,hangman-logo and run.py file. words.py had no warnings
 + [PEP8 Validation for hangman.py ](assets/images/pep8-validation-hangman-display.JPG)  
 + [PEP8 Validation for hang_man_logo.py ](assets/images/pep8-validation-hangman-logo.JPG) 
++ [PEP8 Validation for run.py ](assets/images/pep8-validation-run.py.JPG) 
++ [PEP8 Validation for words.py ](assets/images/pep8-validation-words.py.JPG)  
+
+* I checked that the Hangman logo, Hangman Display image does print onto the Heroku terminal correctly
+* Tested all the code in the Code Institute Heroku terminal and also the terminal inside of Gitpod multiply times to check if the game runs smoothly and that it will not crash.
+* Checked that symbols, numbers or empty spaces will come up as invalid guesses when guessing the word.
+
+* **Coding Issues**
+  * When I was testing out my game on the gitpod terminal with my mentor, he pointed out that the letters does not fill in at the correct empty dash spaces. A new function was created to fix that minor issue.
 
 ---
 # Deployment

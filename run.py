@@ -64,7 +64,7 @@ def print_secret_word(secret_word):
 def print_guessed_letters(guessed_letters):
     print(f'Guessed letters: {" ".join(guessed_letters)}')
 
-# function to replace the blanks with correct letters guessed
+# function to replace the letters in the correct blank dashes
 
 
 def replace_guessed_letter(secret_word, guess, word):
@@ -129,7 +129,7 @@ def play_game(word):
         print("Congratulations!, you guessed the word! You win!")
     else:
         print("You are HANGED in the GALLOWS!! The word was "
-              + word + ". Please Try again")
+              + word + ". PleaseTry again")
 
         
 if __name__ == "__main__":
