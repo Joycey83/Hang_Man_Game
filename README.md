@@ -56,6 +56,16 @@ The word to be guessed will be displayed as _ _ _ _ _ and with an image of a han
 
 ![Guessing Screen.](assets/images/guessing-screen.JPG)
 
+* **Incorrect Letter**
+  * when the player guess is valid but is not in the word, they are greeted with text stating that their guess was not in the word, therefore being incorrect the player will lose a life and this will display the next stage of hangman.
+
+![Incorrect Letter.](assets/images/incorrect-letter-screen.JPG)
+
+* **Correct Letter**
+  * When the player guess is valid and also correct, they are greeted with text praising them and stating that their guess is in the word, therefore being correct a life will not be lost so the hangman display will stay at the same stage until the next correct or incorrect guess.
+
+![Correct Letter.](assets/images/correct-letter-screen.JPG)
+
 ---
 # Technology Used
 
