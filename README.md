@@ -40,8 +40,11 @@ The word to be guessed will be displayed as _ _ _ _ _ and with an image of a han
 ![Hang Man Heading.](assets/images/hang-man-heading.JPG)
 ![Hang Man Display.](assets/images/hang-man-display.JPG)
 
-* **Welcome Message**
-  * 
+* **Player Name**
+  * The player will be asked to enter a name before the Hangman Game can start, The game will not start without a player name. If the player just leaves it blank and press enter a prompt message letting the player know that they will need to enter a name in order to start the game.
+![Hang Man Heading.](assets/images/hang-man-heading)
+![Hang Man Display.](assets/images/hang-man-display.JPG)
+
 ---
 # Technology Used
 
