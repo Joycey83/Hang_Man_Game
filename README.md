@@ -69,6 +69,8 @@ The word to be guessed will be displayed as _ _ _ _ _ and with an image of a han
 * **Guess Word**
   * The player can type in the whole word if they feel that after a few guesses, they already know the secret word. Once the whole word is typed a message will allow the player to tell them if their guess was correct or not.
 
+![Guess Word Screen.](assets/images/guess-word-screen.JPG)
+
 * **Letters Guessed**
 
 * **Invalid Guess**
