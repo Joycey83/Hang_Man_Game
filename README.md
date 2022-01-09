@@ -150,8 +150,21 @@ The word to be guessed will be displayed as _ _ _ _ _ and with an image of a han
 * **Coding Issues**
   * When I was testing out my game on the gitpod terminal with my mentor, he pointed out that the letters does not fill in at the correct empty dash spaces. A new function was created to fix that minor issue.
 
+* **Bugs**
+  * No bugs were found
+
+
 ---
 # Deployment
+This Project was deployed using Code institute's mock terminal for Heroku
+
+* **Steps for Deployment**
+  * Fork or clone this repository.
+  * Goto the Heroku Dashboard.
+  * Select to create a new Heroku app.
+  * Set the buildbacks to Python and NodeJS in that order.
+  * Link the Heroku app to the repository.
+  * click on **Deploy**
 
 ---
 # Credit & Acknowledgement
