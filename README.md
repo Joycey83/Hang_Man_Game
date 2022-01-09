@@ -72,6 +72,14 @@ The word to be guessed will be displayed as _ _ _ _ _ and with an image of a han
 ![Guess Word Screen.](assets/images/guess-word-screen.JPG)
 
 * **Letters Guessed**
+  * Each time the player enter a valid guess the letter will be shown to let the player know which letters that they have tried so in theory it should stop the player from inputting repeated letters.
+
+![Letters Guessed.](assets/images/guessed-letter-screen.JPG)
+
+* **Already Guessed**
+  * As the game plays on, often the player may accidentally guess a letter that they have already guessed, even though we have added the letters on to the Letter Guessed display. As a fall back we will also display a text to let the player know that they have already guessed that letter.
+
+![Already Guessed.](assets/images/already-guess.JPG)
 
 * **Invalid Guess**
 
