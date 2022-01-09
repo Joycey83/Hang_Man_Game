@@ -94,14 +94,33 @@ The word to be guessed will be displayed as _ _ _ _ _ and with an image of a han
 * **Winner Screen**
   * The win screen is display once the player have guessed the word correctly, once this happens the user will be greeted with a congratulations text and will ask the player to input a "Y" or "N" to either play again or exit the game. As the game was not designed with a menu when the player input "N" the game will just stop running in the terminal.
 
+![Winner Screen.](assets/images/winner-screen.JPG)
+
 
 * **Loser Screen**
   * The lose screen is displayed when the player has finally used up all of their lives and lets them know that they have lost the game. The screen will also display the last stage of the hangman figure, showing that they have died.Underneath the hangman display, it will also show all the correct letters that they have guessed before they have ran out of lives. On a new line it greets the player to an unfortunate message letting the player know that they did not get the word and have been 'HANGED in the GALLOWS!', it also display the actual secret word and a encouraging text to persuade the player to play again.
 
 ![Lose Screen.](assets/images/lose-screen.JPG)
 
+* **Features Left To Implement**
+  * Add a High Score menu to the Hangman Game
+  * Add a two player game so that 2 players could have the same word and take it in turn to guess the word, but will have their own hangman display to their Username.
+  * Add different levels to the game, e.g easy = up to 4 letter words, normal = 5 - 6 letter words or hard = 7+ letter words.
+
 ---
 # Technology Used
+## Language used 
++ Python 
+[View Information ](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+---
+# Frameworks & Programs Used
+1. Git was used for my project workspace.All the codes are saved on Git. All my codes was committed on Git and pushed to Github.
+[Git ](https://en.wikipedia.org/wiki/Git)
+2. GitHub was used to store the codes from my project after being pushed from Git.
+[GitHub ](https://en.wikipedia.org/wiki/GitHub)
+3.  Youtube tutorials on learning how to use isalpha() function properly for my Hangman Game.
+[YouTube ](https://www.youtube.com/watch?v=HJpiAZDJrRY) 
 
 ---
 # Testing
