@@ -149,9 +149,9 @@ PEP8 Python Validator - No errors were returned when passing through PEP8, only 
 
 ## Compatibility
 The Hangman Game Python Project has been checked for compatibility on Chrome, Edge and Firefox. The game was not tested on Safari browser as I do not own any Apple devices or do I know any one who does.
-+ [Compatibility- Chrome  ](assets/images/pep8-validation-words.py.JPG) 
-+ [Compatibility- Firefox ](assets/images/pep8-validation-words.py.JPG)  
-+ [Compatibility- Edge    ](assets/images/pep8-validation-words.py.JPG) 
++ [Compatibility- Chrome  ](assets/images/Compatibility-chrome.JPG) 
++ [Compatibility- Firefox ](assets/images/Compatibility-firefox.JPG)  
++ [Compatibility- Edge    ](assets/images/Compatibility-edge.JPG) 
 * **Coding Issues**
   * When I was testing out my game on the gitpod terminal with my mentor, he pointed out that the letters does not fill in at the correct empty dash spaces. A new function was created to fix that minor issue.
 
