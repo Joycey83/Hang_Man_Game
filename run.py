@@ -104,7 +104,7 @@ def play_game(word):
                 lives -= 1
                 guessed_letters.append(guess)
             else:
-                print("Good job,", guess, "is in the word!")
+                print("Fantastic Job!,", guess, "is in the word!")
                 guessed_letters.append(guess)
                 secret_word = replace_guessed_letter(secret_word, guess, word)
                 

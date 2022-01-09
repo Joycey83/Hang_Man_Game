@@ -72,7 +72,7 @@ The word to be guessed will be displayed as _ _ _ _ _ and with an image of a han
 ![Guess Word Screen.](assets/images/guess-word-screen.JPG)
 
 * **Letters Guessed**
-  * Each time the player enter a valid guess the letter will be shown to let the player know which letters that they have tried so in theory it should stop the player from inputting repeated letters.
+  * Each time the player enters a valid letter it will be shown on the display to let the player know which letters that they have tried. In theory it should stop the player from inputting repeated letters.
 
 ![Letters Guessed.](assets/images/guessed-letter-screen.JPG)
 
@@ -82,6 +82,7 @@ The word to be guessed will be displayed as _ _ _ _ _ and with an image of a han
 ![Already Guessed.](assets/images/already-guess.JPG)
 
 * **Invalid Guess**
+  * When the player guess is invalid(1,&,?) etc, they are are greeted with text stating that their guess is not a valid character(not a letter).
 
 ---
 # Technology Used
