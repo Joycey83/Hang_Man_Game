@@ -1,3 +1,4 @@
+# imports from the Bulit-in Python functions that was used
 import random
 from words import word_list
 from hang_man_logo import HANGMAN_GAME_LOGO
@@ -16,6 +17,8 @@ def validate_input_no_empty(input):
 My Hangman game was partially referenced from a Youtube Tutorial
 taken from a Youtube channel called Kite, for link see readme file. 
 """
+
+# username function & playagain loop for hangman game
 
 
 def main():
@@ -38,10 +41,14 @@ def main():
         word = get_word()
         play_game(word)
 
+# function to get the randomised word from word-list
+
 
 def get_word():
     word = random.choice(word_list)
     return word.upper()
+
+# function to let player know how many letters in that word
 
 
 def print_secret_word(secret_word):
@@ -50,9 +57,13 @@ def print_secret_word(secret_word):
         new_word += f'{letter} '
     print(new_word)
 
+# print function to let the player know which letters they guessed already
+
 
 def print_guessed_letters(guessed_letters):
     print(f'Guessed letters: {" ".join(guessed_letters)}')
+
+# function to replace the blanks with correct letters guessed
 
 
 def replace_guessed_letter(secret_word, guess, word):
@@ -63,8 +74,16 @@ def replace_guessed_letter(secret_word, guess, word):
             secret_word_list[index] = guess
         index = index + 1
     return "".join(secret_word_list)
-     
-     
+
+
+"""
+function for the main part of the game, 
+a while loop asking the player to guess the letter 
+of the choosen word from the list, if guess incorrectly
+stages of the hangman will be printed.
+"""   
+
+
 def play_game(word):
     secret_word = "_" * len(word)
     guessed = False
@@ -108,7 +127,7 @@ def play_game(word):
     if guessed:
         print("Congrats, you guessed the word! You win!")
     else:
-        print("OH NO!!, you are HANGED! The word was " + word + ".Try again")
+        print("You are HANGED in the GALLOWS!! The word was " + word)
 
         
 if __name__ == "__main__":
