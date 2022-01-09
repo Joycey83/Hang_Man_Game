@@ -87,7 +87,7 @@ The word to be guessed will be displayed as _ _ _ _ _ and with an image of a han
 ![Validation of Letter.](assets/images/validation-of-letter-screen.JPG)
 
 * **Hangman Display**
-  * The Player will be able to see their progress of not only the hangman stages but also the letters that they have used previously in the current game. With each incorrect letter or word guessed, the hangman display will go to the next 'stage' of the display until the User gets the word correct or runs out of lives, which will show either a congratulations screen or an unfortunate lose screen.
+  * The Player will be able to see their progress of not only the hangman stages but also the letters that they have used previously in the current game. With each incorrect letter or word guessed, the hangman display will go to the next 'stage' of the display until the player gets the word correct or runs out of lives, which will show either a congratulations screen or an unfortunate lose screen.
 
 ![Hangman Stages.](assets/images/hang-man-stages.JPG)
 
