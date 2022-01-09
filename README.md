@@ -54,6 +54,8 @@ The word to be guessed will be displayed as _ _ _ _ _ and with an image of a han
 * **Guessing the letter or Word**
   * The Guessing screen displays the hangman title, the first stage of the hangman game. Underneath the hangman display it will also show the player the number of letters of the word that they need to guess. The player is asked to input a guess of a letter or word.
 
+![Welcome Message.](assets/images/guessing-screen.JPG)
+
 ---
 # Technology Used
 
