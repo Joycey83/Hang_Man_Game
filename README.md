@@ -84,6 +84,8 @@ The word to be guessed will be displayed as _ _ _ _ _ and with an image of a han
 * **Invalid Guess**
   * When the player guess is invalid(1,&,?) etc, they are are greeted with text stating that their guess is not a valid character(not a letter).
 
+![Validation of Letter.](assets/images/validation-of-letter-screen.JPG)
+
 ---
 # Technology Used
 
