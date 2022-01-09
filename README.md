@@ -195,7 +195,7 @@ This Project was deployed using Code institute's mock terminal for Heroku
   [View ](https://en.wikipedia.org/wiki/Hangman_(game))
 
 
-
+---
 ## Acknowledgement
 * My Mentor Antonio Rodriguez, who has supported me through the project with lots of valuable advice, help and encouragement.
-I got a lot of help from my fellow Slackers from the Slack community.
+* I got a lot of help from my fellow Slackers from the Slack community.
