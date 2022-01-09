@@ -35,9 +35,13 @@ The word to be guessed will be displayed as _ _ _ _ _ and with an image of a han
 # Features
 ## Existing Features
 
-* **Game Heading**
+* **Game Heading & Hangman Display**
+  * A appealing ASCII code text and display image of the Hangman Game will be shown to introduce the player to the game.
+![Hang Man Heading.](assets/images/hang-man-heading.JPG)
+![Hang Man Display.](assets/images/hang-man-display.JPG)
 
-
+* **Welcome Message**
+  * 
 ---
 # Technology Used
 
