@@ -40,6 +40,7 @@ def main():
     while input("Play Again? (Y/N) ").upper() == "Y":
         word = get_word()
         play_game(word)
+        
 
 # function to get the randomised word from word-list
 
@@ -128,7 +129,7 @@ def play_game(word):
         print("Congratulations!, you guessed the word! You win!")
     else:
         print("You are HANGED in the GALLOWS!! The word was "
-              + word + ".Try again")
+              + word + ". Please Try again")
 
         
 if __name__ == "__main__":

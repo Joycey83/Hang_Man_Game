@@ -87,9 +87,18 @@ The word to be guessed will be displayed as _ _ _ _ _ and with an image of a han
 ![Validation of Letter.](assets/images/validation-of-letter-screen.JPG)
 
 * **Hangman Display**
-  * The Player will be able to see their progress of not only the hangman stages but also the letters that they have used previously in the current game. With each incorrect letter or word guessed, the hangman display will go to the next 'stage' of the display until the User gets the word correct or runs out of lives, which will the show either a congratulations screen or an unfortunate lose screen.
+  * The Player will be able to see their progress of not only the hangman stages but also the letters that they have used previously in the current game. With each incorrect letter or word guessed, the hangman display will go to the next 'stage' of the display until the User gets the word correct or runs out of lives, which will show either a congratulations screen or an unfortunate lose screen.
 
 ![Hangman Stages.](assets/images/hang-man-stages.JPG)
+
+* **Winner Screen**
+  * The win screen is display once the player have guessed the word correctly, once this happens the user will be greeted with a congratulations text and will ask the player to input a "Y" or "N" to either play again or exit the game. As the game was not designed with a menu when the player input "N" the game will just stop running in the terminal.
+
+
+* **Loser Screen**
+  * The lose screen is displayed when the player has finally used up all of their lives and lets them know that they have lost the game. The screen will also display the last stage of the hangman figure, showing that they have died.Underneath the hangman display, it will also show all the correct letters that they have guessed before they have ran out of lives. On a new line it greets the player to an unfortunate message letting the player know that they did not get the word and have been 'HANGED in the GALLOWS!', it also display the actual secret word and a encouraging text to persuade the player to play again.
+
+![Lose Screen.](assets/images/lose-screen.JPG)
 
 ---
 # Technology Used
