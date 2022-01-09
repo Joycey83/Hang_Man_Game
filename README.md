@@ -169,13 +169,14 @@ This Project was deployed using Code institute's mock terminal for Heroku
 ---
 # Credit 
 * **Code**
+  * The hangman Display images was taken from a Youtuber called MJ Codes his name is MJ Linane
+  [View ](https://github.com/mj-linane/cs4all-python-student-templates/blob/master/hangman-art.py)
   * I researched more on While loops,if else statements and function on W3school as I found it easier to understand.
-+ [View if else statement ](https://www.w3schools.com/python/python_conditions.asp) 
-+ [View While Loop ](https://www.w3schools.com/python/python_while_loops.asp) 
-+ [View Python Functions ](https://www.w3schools.com/python/python_functions.asp) 
+  + [View if else statement from W3 School ](https://www.w3schools.com/python/python_conditions.asp) 
+  + [View While Loop from W3 School ](https://www.w3schools.com/python/python_while_loops.asp) 
+  + [View Python Functions from W3 School ](https://www.w3schools.com/python/python_functions.asp) 
   * The random word list was also taken from Youtube channel called Kite.
   [View ](https://github.com/kiteco/python-youtube-code/blob/master/build-hangman-in-python/words.py) 
-
   * For my Hangman Game I have taken inspiration from a YouTube channel called kite. Coding referenced on this video was partially used but was amended and modified for my own project.
 [View ](https://www.youtube.com/watch?v=paUdvVuJTZc&list=PL96xVQjLpfmUgOIB83X768xYQbb6pRW3P&index=20) 
 
