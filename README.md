@@ -49,6 +49,8 @@ The word to be guessed will be displayed as _ _ _ _ _ and with an image of a han
 * **Welcome Message**
   * After the player has entered a player name a short welcome message will be shown. A message letting the player know how many lives that they have to play this game will also be shown.
 
+![Welcome Message.](assets/images/welcome-message.JPG)
+
 ---
 # Technology Used
 
