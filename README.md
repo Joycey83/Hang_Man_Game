@@ -30,8 +30,13 @@ The word to be guessed will be displayed as _ _ _ _ _ and with an image of a han
 ---
 # Flow Chart of Hang Man Game
 ![Hang Man Flow Chart.](assets/images/flowchart-final-hangman.jpg)
----   
-# Existing Features
+
+----
+# Features
+## Existing Features
+
+* **Game Heading**
+
 
 ---
 # Technology Used
