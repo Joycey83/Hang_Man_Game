@@ -121,6 +121,16 @@ The word to be guessed will be displayed as _ _ _ _ _ and with an image of a han
 [GitHub ](https://en.wikipedia.org/wiki/GitHub)
 3.  Youtube tutorials on learning how to use isalpha() function properly for my Hangman Game.
 [YouTube ](https://www.youtube.com/watch?v=HJpiAZDJrRY) 
+4. Lucidchart is used to create and store flowchart for my Hangman Game.
+[Lucid Chart ](https://www.lucidchart.com/pages/)  
+5. Heroku is used to build, run and scale applications in a similar manner across most languages.
+[Heroku ](https://www.heroku.com/)  
+6. Windows 10 Paint was used on resizing my images for my readme file.
+[Window 10 Paint](assets/images/paint.jpg)  
+7. Text to ASCII Art Generator was used to get the Hangman Game Graphics heading
+[Patorjk ](http://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=HANG%20MAN%20GAME)
+8. Convert my Hangman display Image into ASCII Art
+[Convertcase.net ](https://convertcase.net/ascii-art-generator/) 
 
 ---
 # Testing
