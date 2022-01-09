@@ -169,7 +169,14 @@ This Project was deployed using Code institute's mock terminal for Heroku
 ---
 # Credit 
 * **Code**
-For my Hangman Game I have taken inspiration from a YouTube channel called kite. Coding referenced on this video was partially used but was amended and modified for my own project.
+  * I researched more on While loops,if else statements and function on W3school as I found it easier to understand.
++ [View if else statement ](https://www.w3schools.com/python/python_conditions.asp) 
++ [View While Loop ](https://www.w3schools.com/python/python_while_loops.asp) 
++ [View Python Functions ](https://www.w3schools.com/python/python_functions.asp) 
+  * The random word list was also taken from Youtube channel called Kite.
+  [View ](https://github.com/kiteco/python-youtube-code/blob/master/build-hangman-in-python/words.py) 
+
+  * For my Hangman Game I have taken inspiration from a YouTube channel called kite. Coding referenced on this video was partially used but was amended and modified for my own project.
 [View ](https://www.youtube.com/watch?v=paUdvVuJTZc&list=PL96xVQjLpfmUgOIB83X768xYQbb6pRW3P&index=20) 
 
 
@@ -178,6 +185,9 @@ For my Hangman Game I have taken inspiration from a YouTube channel called kite.
   [View ](https://www.markdownguide.org/cheat-sheet/)
   * My README file that I have written are based on the Code Institute Sample README file. Some of the headings are taken from it and some of the content are based on it as well.
    [View ](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+PE_PAGPPF+2021_Q2/courseware/b3378fc1159e43e3b70916fdefdfae51/605f34e006594dc4ae19f5e60ec75e2e/)
+  * Information about how to play the Hangman game was taken from Wikipedia
+  [View ](https://en.wikipedia.org/wiki/Hangman_(game))
+
 
 
 ## Acknowledgement
