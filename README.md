@@ -167,7 +167,19 @@ This Project was deployed using Code institute's mock terminal for Heroku
   * click on **Deploy**
 
 ---
-# Credit & Acknowledgement
+# Credit 
+* **Code**
+For my Hangman Game I have taken inspiration from a YouTube channel called kite. Coding referenced on this video was partially used but was amended and modified for my own project.
+[View ](https://www.youtube.com/watch?v=paUdvVuJTZc&list=PL96xVQjLpfmUgOIB83X768xYQbb6pRW3P&index=20) 
 
 
+* **Other Resources**
+  * I learnt and researched Markdown Syntax for my README file from a website called Mark Down Guide. This enabled me to learn how to use the correct syntax so that I can do the README file properly.
+  [View ](https://www.markdownguide.org/cheat-sheet/)
+  * My README file that I have written are based on the Code Institute Sample README file. Some of the headings are taken from it and some of the content are based on it as well.
+   [View ](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+PE_PAGPPF+2021_Q2/courseware/b3378fc1159e43e3b70916fdefdfae51/605f34e006594dc4ae19f5e60ec75e2e/)
 
+
+## Acknowledgement
+* My Mentor Antonio Rodriguez, who has supported me through the project with lots of valuable advice, help and encouragement.
+I got a lot of help from my fellow Slackers from the Slack community.
