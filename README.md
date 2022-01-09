@@ -66,6 +66,10 @@ The word to be guessed will be displayed as _ _ _ _ _ and with an image of a han
 
 ![Correct Letter.](assets/images/correct-letter-screen.JPG)
 
+* **Letters Guessed**
+
+* **Invalid Guess**
+
 ---
 # Technology Used
 
