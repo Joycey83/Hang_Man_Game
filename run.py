@@ -125,9 +125,10 @@ def play_game(word):
         print_secret_word(secret_word)
         print("\n")
     if guessed:
-        print("Congrats, you guessed the word! You win!")
+        print("Congratulations!, you guessed the word! You win!")
     else:
-        print("You are HANGED in the GALLOWS!! The word was " + word)
+        print("You are HANGED in the GALLOWS!! The word was "
+              + word + ".Try again")
 
         
 if __name__ == "__main__":
