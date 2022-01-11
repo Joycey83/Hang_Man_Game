@@ -5,7 +5,7 @@
 
 
 def display_hangman(lives):
-    stages = [  # final state: head, torso, both arms, and both legs
+    stages = [  # final state: noose, head, torso, both arms, and both legs
                   """
   +---+
   |   |
@@ -25,7 +25,7 @@ def display_hangman(lives):
       |
 =========
                 """,
-                # head, torso, both arms, and one leg
+                # noose, head, torso, both arms, and one leg
                 """
   +---+
   |   |
@@ -35,7 +35,7 @@ def display_hangman(lives):
       |
 =========
                 """,
-                # head, torso, and both arms
+                # noose, head, torso, and both arms
                 """
   +---+
   |   |
@@ -45,7 +45,7 @@ def display_hangman(lives):
       |
 =========
                 """,
-                # head, torso, and one arm
+                # noose, head, torso, and one arm
                 """
   +---+
   |   |
@@ -55,7 +55,7 @@ def display_hangman(lives):
       |
 =========
                 """,
-                
+                # noose, head & torso
                 """
   +---+
   |   |
@@ -65,7 +65,7 @@ def display_hangman(lives):
       |
 =========
                 """,
-                
+                # noose & head
                 """
   +---+
   |   |
@@ -75,15 +75,16 @@ def display_hangman(lives):
       |
 =========
                 """,
+                # noose
+                """
+  +---+
+      |
+      |
+      |
+      |
+      |
+=========
+                """
                 # initial empty state
-                """
-  +---+
-      |
-      |
-      |
-      |
-      |
-=========
-                """
     ]
     return stages[lives]
