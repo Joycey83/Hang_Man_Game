@@ -1,4 +1,6 @@
 # imports from the Bulit-in Python functions that was used
+# imports of the words list,hangman logo and hangman display image
+
 import random
 from words import word_list
 from hang_man_logo import HANGMAN_GAME_LOGO
@@ -18,7 +20,7 @@ My Hangman game was partially referenced from a Youtube Tutorial
 taken from a Youtube channel called Kite, for link see readme file. 
 """
 
-# username function & playagain loop for hangman game
+# username function & play again loop for hangman game
 
 
 def username():
