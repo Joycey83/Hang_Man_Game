@@ -199,3 +199,4 @@ This Project was deployed using Code institute's mock terminal for Heroku
 ## Acknowledgement
 * My Mentor Antonio Rodriguez, who has supported me through the project with lots of valuable advice, help and encouragement.
 * I got a lot of help from my fellow Slackers from the Slack community.
+* I would like to thank you Igor from Tutor Assistance for helping me fix my Github so that I was able to commit and push my work.  
