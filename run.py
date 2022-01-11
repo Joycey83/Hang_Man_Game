@@ -1,5 +1,5 @@
 # imports from the Bulit-in Python functions that was used
-# imports of the words list,hangman logo and hangman display image
+# imports from the words list,hangman logo and hangman display image file
 
 import random
 from words import word_list
