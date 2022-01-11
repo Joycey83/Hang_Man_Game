@@ -21,7 +21,7 @@ taken from a Youtube channel called Kite, for link see readme file.
 # username function & playagain loop for hangman game
 
 
-def main():
+def username():
     print(HANGMAN_GAME_LOGO)
     input_is_invalid = True
     while input_is_invalid is True:
@@ -129,9 +129,9 @@ def play_game(word):
         print("Congratulations!, you guessed the word! You win!")
     else:
         print("You are HANGED in the GALLOWS!! The word was "
-              + word + ". PleaseTry again")
+              + word + ". Please,Try again")
 
         
 if __name__ == "__main__":
 
-    main()
+    username()
