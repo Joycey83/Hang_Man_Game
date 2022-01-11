@@ -36,7 +36,7 @@ def username():
             print("Game begins now...\n")
             time.sleep(2)
         else:
-            print("NEED TO ENTER PLAYER NAME! \n")
+            print(" YOU NEED TO ENTER A PLAYER NAME! \n")
     word = get_word()
     play_game(word)
     while input("Play Again? (Y/N) ").upper() == "Y":
