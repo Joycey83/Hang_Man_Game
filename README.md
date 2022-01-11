@@ -191,7 +191,7 @@ This Project was deployed using Code institute's mock terminal for Heroku
 * **Other Resources**
   * I learnt and researched Markdown Syntax for my README file from a website called Mark Down Guide. This enabled me to learn how to use the correct syntax so that I can do the README file properly.
   [View ](https://www.markdownguide.org/cheat-sheet/)
-  * My README file that I have written are based on the Code Institute Sample README file. Some of the headings are taken from it and some of the content are based on it as well.
+  * My README file that I have written are based on the Code Institute Sample of Battleship README file. Some of the headings are taken from it and some of the content are based on it as well.
    [View ](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+PE_PAGPPF+2021_Q2/courseware/b3378fc1159e43e3b70916fdefdfae51/605f34e006594dc4ae19f5e60ec75e2e/)
   * Information about how to play the Hangman game was taken from Wikipedia
   [View ](https://en.wikipedia.org/wiki/Hangman_(game))
