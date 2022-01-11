@@ -185,7 +185,7 @@ This Project was deployed using Code institute's mock terminal for Heroku
   * The random word list was also taken from Youtube channel called Kite.
   [View ](https://github.com/kiteco/python-youtube-code/blob/master/build-hangman-in-python/words.py) 
   * For my Hangman Game I have taken inspiration from a YouTube channel called kite. Coding referenced on this video was partially used but was amended and modified for my own project.
-[View ](https://www.youtube.com/watch?v=paUdvVuJTZc&list=PL96xVQjLpfmUgOIB83X768xYQbb6pRW3P&index=20) 
+[View ](https://www.youtube.com/watch?v=m4nEnsavl6w) 
 
 
 * **Other Resources**
