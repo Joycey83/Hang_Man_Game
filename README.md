@@ -133,6 +133,8 @@ The word to be guessed will be displayed as _ _ _ _ _ and with an image of a han
 [Convertcase.net ](https://convertcase.net/ascii-art-generator/) 
 9. The Hangman image that I used to convert into ASCII Art was taken from Facebook Hangman Game
 [Facebook ](https://m.facebook.com/Playing-Hangman-with-your-status-272660568374/) 
+10. I went on Stack Overflow to learn how to create a player Username function
+[Stack Overflow ](https://stackoverflow.com/questions/53277743/how-do-i-create-a-username-and-password-system-that-remembers-different-username) 
 
 ---
 # Testing
